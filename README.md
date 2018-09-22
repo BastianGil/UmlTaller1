@@ -4,7 +4,7 @@ Clase que contiene el Api de processing y ejecuta el Hilo princpal
 ### Variables
 * **app:Logica:** Objeto tipo Logica parahacer udo del PApplet
 ### Metodos
-* **main(Stringg[]):void:** Medodo que ejecuta la aplicacion
+* **main(String[]):void:** Medodo que ejecuta la aplicacion
 
 * **settings():void:** Definir propiedades del lienz
 
@@ -38,13 +38,13 @@ Recive y responde
 ### Metodos
 * **Reseptor(Sokcket): void:** Constructor de clase receptor 
 
-## Thead
+## Thread
 Crea objetos con caracteristicas de Hilos
 ### Variables
 ### Metodos
 * **run():void:** Metodo que ejecuta el hilo
 
-## Elementoss
+## Elemento
 Crea los objetos recogibles del juego
 ### Variables
 * **app:PApplet:** llama el uso de los elementos en el PApplet
@@ -53,38 +53,38 @@ Crea los objetos recogibles del juego
 * **Imagen:PImage[]:** Numero de imagenes que reprecentan todod lo elemntos recogibles
 
 ### Metodos
-* **Elementos(int,int,PApllet)
+* **Elemento(int,int,PApplet)
 
 ## Balon
 ### Metodos
 * **Balon(PApplet,int,int):** Costructor de Balon
-* **pintar():void:** Heredado de Elementoss pone la imagen del Balon en el lienzo
+* **pintar():void:** Heredado de Elemento pone la imagen del Balon en el lienzo
 
 ## Zanahoria
 ### Metodos
 * **Zanahoria(PApplet,int,int):** Costructor de Zanahoria
-* **pintar():void:** Heredado de Elementoss pone la imagen del Balon en el lienzo
+* **pintar():void:** Heredado de Elemento pone la imagen del Balon en el lienzo
 
 ## Libro
 ### Metodos
 * **Libro(PApplet,int,int):** Costructor de Libro
-* **pintar():void:** Heredado de Elementoss pone la imagen del Libro en el lienzo
+* **pintar():void:** Heredado de Elemento pone la imagen del Libro en el lienzo
 
 
 ## Mc
 ### Metodos
 * **Mc(PApplet,int,int):** Costructor de Mc
-* **pintar():void:** Heredado de Elementoss pone la imagen del Mc en el lienzo
+* **pintar():void:** Heredado de Elemento pone la imagen del Mc en el lienzo
 
 ## Iphone
 ### Metodos
 * **Iphone(PApplet,int,int):** Costructor de IPhone
-* **pintar():void:** Heredado de Elementoss pone la imagen del Iphone en el lienzo
+* **pintar():void:** Heredado de Elemento pone la imagen del Iphone en el lienzo
 
 ## Coca
 ### Metodos
 * **Coca(PApplet,int,int):** Costructor de Coca
-* **pintar():void:** Heredado de Elementoss pone la imagen del Coca en el lienzo
+* **pintar():void:** Heredado de Elemento pone la imagen del Coca en el lienzo
 
 
 ## Personaje
@@ -157,6 +157,10 @@ Envia y recive informacion
 ### Metodos
 * **Reseptor(Sokcket): void:** Constructor de clase receptor 
 
+## [Interfaz] onMessage
+Crea el patron observer para mostrar lo envido por el servidor
+## Metodos
+* **OnReceived():String:** recibe el mensaje enviado por el servidor
 
 
 
