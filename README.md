@@ -1,4 +1,4 @@
-# UmlTaller1
+# UmlTaller1-Eclipse
 ## Main
 Clase que contiene el Api de processing y ejecuta el Hilo princpal
 ### Variables
@@ -32,7 +32,7 @@ Extremo de la coneccion, recibe y envia datos
 * **enviar():void:** Datos que se envian del servidor al cliente
 
 ## Reseptor
-Resive y responde 
+Recive y responde 
 ### Variables
 * **s:Socket:** Crea el flujo de datos
 ### Metodos
@@ -124,6 +124,38 @@ Personaje con caracteristicas especiales
 * **Perso2(PApplet,int,int):** Costructor de personaje 2
 * **pintar():void:** Heredado de personaje pone la imagen del personaje en el lienzo
 
+
+
+# UmlTaller1-Android Studio
+## Main
+Clase que ejecutable
+### Variables
+* **btn_go:Button:** Variable que reprecenta el boton adelante
+* **btn_up:Button:** Valiable que reprecenta el votonde saltar
+* **iv_perso:ImageView:** Imagen del personaje en pantalla
+### Metodos
+* **OnCreate:** Ejecuta la aplicacion
+
+## Thead
+Crea objetos con caracteristicas de Hilos
+### Variables
+### Metodos
+* **run():void:** Metodo que ejecuta el hilo
+
+## Cliente
+Extremo de la coneccion, establece coneccion
+### Variables
+* **s:Socket:** Comenzar conexiones
+### Metodos
+* **Cliente(MainActivity)** Permite que se observable las interacciones de la conexion
+* **enviar():void:** Datos que se envian del cliente al servidor
+
+## Reseptor
+Envia y recive informacion
+### Variables
+* **s:Socket:** Crea el flujo de datos
+### Metodos
+* **Reseptor(Sokcket): void:** Constructor de clase receptor 
 
 
 
